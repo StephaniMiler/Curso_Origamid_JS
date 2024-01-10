@@ -95,7 +95,7 @@ console.log(totalPaises); // erro, totalPaises não definido
 /*ESCOPO LÉXICO
 Funções conseguem acessar variáveis que foram criadas no contexto pai*/
 
-var profissao = 'Designer';
+/*var profissao = 'Designer';
 
 function dados() {
   var nome = 'André';
@@ -109,7 +109,7 @@ function dados() {
 }
 
 dados(); // Retorna 'André, 29, Rio de Janeiro, Designer'
-outrosDados(); // retorna um erro
+outrosDados(); // retorna um erro*/
 
 //EXERCÍCIO
 // Crie uma função para verificar se um valor é Truthy
@@ -162,12 +162,10 @@ function tipoDado(dado){
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 // Função para exibir o nome completo no console
-function exibirNomeCompleto() {
-  var nomeCompleto = "Stephani Sara Miler"; // Substitua pelo seu nome completo
-  console.log(nomeCompleto);
-}
-addEventListener('scroll', exibirNomeCompleto);
 
+addEventListener('scroll', function() {
+  console.log('Stephani Sara Miler');
+});
 
 // Corrija o erro abaixo
 var totalPaises = 193;  // Mova a declaração para fora da função
